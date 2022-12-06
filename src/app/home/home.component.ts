@@ -1,35 +1,38 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ImageService } from "./image.service";
-export interface slider {
-  image: string,
-  thumbImage: string,
-  title: string
-};
+import { Component, OnInit} from '@angular/core';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { Boxes } from '../boxes/boxes';
+import { BoxesService } from '../boxes/boxes.service';
+import { Clearomizer } from '../clearomizer/clearomizer';
+import { ClearomizerService } from '../clearomizer/clearomizer.service';
+import { Vape } from '../vape/vape';
+import { VapeService } from '../vape/vape.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  imageObject: Array<slider> = [];
-
-  constructor(private imageService: ImageService) {
-    this.setImageObject();
+  Clearomizer:Clearomizer[]=[]; 
+  boxes: Boxes[]=[]; 
+  Vape:Vape[]=[];
+  images :Array<object>= [{
+   thumbImage:'../assets/news3.JPG',
+  },{
+    thumbImage:'../assets/news2.jpg',
+  },{
+    thumbImage:'../assets/news1.jpg'
+  }];
+  constructor(private ClearomizerService:ClearomizerService,private boxesservvice:BoxesService,private VapeService:VapeService) {
   }
-
-  setImageObject() {
-    this.imageService.getImages().subscribe((data: any) => {
-      this.imageObject = data;
+  ngOnInit(): void {
+    this.VapeService.getVape().subscribe((Vape:any)=>{
+      this.Vape=Vape;
+    });
+    this.boxesservvice.getBoxes().subscribe((boxes:any)=>{
+      this.boxes=boxes;
+    });  
+    this.ClearomizerService.getclearomizer().subscribe((Clearomizer:any)=>{
+      this.Clearomizer=Clearomizer;
     });
   }
-
-  imageClickHandler() {
-    console.log();
-  }
-
-  ngOnInit(): void {
-  
-  }
-  
 }

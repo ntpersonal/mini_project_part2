@@ -1,18 +1,80 @@
-<div style=" margin-left:300px;width: 50%;">
-    <ng-image-slider #nav [images]="imageObject" [infinite]="true" [autoSlide]="5" [imageSize]="{width: '100%', height: 300}" slideImage="1"></ng-image-slider>
-</div>
+<!-- <ng-image-slider [images]="images" [infinite]="true" [autoSlide]="true" ></ng-image-slider> -->
+<ng-image-slider [images]="images" [infinite]="true" [autoSlide]="true" #nav [imageSize]="{width: '762px',heigth:'442px',space:'10px'}" class="slider"></ng-image-slider>
 <div class="container">
 <br>
 <h2 class="">Vape :</h2>
-<section class="" >
-
-</section>
+<article>
+  <div class="row container">
+    <div class="col-md-4 col-sm-12 "style="text-align:center;" *ngFor="let i of Vape">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{i.nom}}</h5>
+          <div class="card-text">Price :{{i.prix}}DT <br>
+            <div *ngIf="i.dispo==true">
+              Available
+            </div>
+            <div *ngIf="i.dispo==false">
+              Not Available
+            </div>
+          </div>
+          
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</article>
 <br>
-<h2 class=""><i class="fas fa-box"></i>Boxes</h2>
-
-<section class="">
-
-</section>
+<h2 class=""><i class="fas fa-box"></i>Boxes :</h2>
+<article>
+  <div class="row container">
+    <div class="col-md-4 col-sm-12" style="text-align:center;" *ngFor="let i of boxes.slice(0,6)">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{i.nom}}</h5>
+          <div class="card-text">Price :{{i.prix}}DT <br>
+            <div *ngIf="i.dispo==true">
+              Available
+            </div>
+            <div *ngIf="i.dispo==false">
+              Not Available
+            </div>
+          </div>
+          
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </article>
 <br>
-<h2 class="">Clearomizer</h2>
+<h2 class="">Clearomizer :</h2>
+<article>
+  <div class="row">
+    <div class="col-md-4 col-sm-12" *ngFor="let i of Clearomizer.slice(0,6)">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{i.nom}}</h5>
+          <div class="card-text">Price :{{i.prix}}DT <br>
+            <div *ngIf="i.dispo==true">
+              Available
+            </div>
+            <div *ngIf="i.dispo==false">
+              Not Available
+            </div>
+          </div>
+          
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  </article>
 </div>
+  <app-footer></app-footer>

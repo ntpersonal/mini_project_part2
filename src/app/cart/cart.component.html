@@ -1,0 +1,16 @@
+<div class="shopping-cart">
+  <div class="cart-items">
+    <div *ngFor="let item of items">
+      <div class="cart-item">
+        <img [src]="item.image" [alt]="item.name" class="cart-item-image" />
+        <h1 class="cart-item-name">{{ item.name }}</h1>
+        <p class="cart-item-price">{{ item.price | currency }}</p>
+        <button (click)="removeItem(item)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div class="cart-total">
+    <h1 class="cart-total-label">Total:</h1>
+    <p class="cart-total-amount">{{ total | currency }}</p>
+  </div>
+</div>

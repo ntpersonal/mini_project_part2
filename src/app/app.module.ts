@@ -10,10 +10,14 @@ import { ClearomizerComponent } from './clearomizer/clearomizer.component';
 import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgImageSliderModule } from 'ng-image-slider';
-
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider'; 
-import { ImageService } from './home/image.service';
+import { ImageService } from './image.service';
+import { VapeComponent } from './vape/vape.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,14 +26,20 @@ import { ImageService } from './home/image.service';
     BoxesComponent,
     ClearomizerComponent,
     ErrorComponent,
-    FooterComponent
+    FooterComponent,
+    VapeComponent,
+    LoginComponent,
+    SignupComponent,
+    CartComponent,
   ],
   imports: [
-    NgImageSliderModule,
     BrowserModule,
-    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgImageSliderModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatSliderModule    
   ],
   providers:  [ ImageService],

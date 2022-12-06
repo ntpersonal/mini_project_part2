@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1><hr>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label class="form-label">Email address</label>
+                          <input formControlName="email" type="email" class="form-control" placeholder="email@gmail.com">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div *ngIf="MailRequired()" class="alert alert-danger">
+                          Email is required
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div *ngIf="isValidPattern()" class="alert alert-warning">
+                          The password must start with a CAPiTAL letter followed by at least 1 letter
+                        </div>
+                        <div *ngIf="PassRequired()" class="alert alert-danger">
+                          Password is required
+                        </div>
+                        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" (click)="login()">Login</button>
+                      </form><br>
+                      New user ?<a routerLink="/Signup">Click to sign up</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+<app-footer></app-footer>
+
+

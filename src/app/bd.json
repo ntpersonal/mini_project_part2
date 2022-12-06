@@ -1,0 +1,471 @@
+{
+  "Admin": [
+    {
+      "name": "yassine ben ammar",
+      "email": "yassinebenammar145@gmail.com",
+      "mobile": 21667525,
+      "password": "Ahla",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "omar@gmail.com",
+      "mobile": 58554359,
+      "password": "admin"
+    },
+    {
+      "name": "azyz",
+      "email": "azyz@gmail.com",
+      "mobile": 78541235,
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "yassin",
+      "email": "yassin@gmail.com",
+      "mobile": 29832452,
+      "password": "0000",
+      "id": 3
+    },
+    {
+      "name": "Omar werfilli",
+      "email": "yassinebenammar340@gmail.com",
+      "mobile": 21667525,
+      "password": "Hello",
+      "id": 4
+    }
+  ],
+  "Vape": [
+    {
+      "id": 1,
+      "nom": "Kit Drag 3",
+      "prix": 310,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/kitdrag3.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Kit Drag 3 Voopoo",
+      "prix": 310,
+      "quantite": 5,
+      "dispo": true,
+      "image": "../assets/kitdrag3tppx.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Kit Drag 3 original",
+      "prix": 310,
+      "quantite": 6,
+      "dispo": true,
+      "image": "../assets/kitdrag-3original.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Kit Drag 2",
+      "prix": 350,
+      "quantite": 8,
+      "dispo": true,
+      "image": "../assets/kitdrag2.jpg"
+    },
+    {
+      "id": 5,
+      "nom": "Kit Gen 200",
+      "prix": 329,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/kitGen200.jpg"
+    },
+    {
+      "id": 6,
+      "nom": "Kit puma ",
+      "prix": 400,
+      "quantite": 6,
+      "dispo": true,
+      "image": "../assets/kitpuma.jpg"
+    }
+  ],
+  "boxes": [
+    {
+      "id": 1,
+      "nom": "Drag 2",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag21.png"
+    },
+    {
+      "id": 2,
+      "nom": "Drag 2",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag22.png"
+    },
+    {
+      "id": 3,
+      "nom": "Drag 2",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag23.png"
+    },
+    {
+      "id": 4,
+      "nom": "Drag 3",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag31.png"
+    },
+    {
+      "id": 5,
+      "nom": "Drag 3",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag32.png"
+    },
+    {
+      "id": 6,
+      "nom": "Drag 3",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag33.png"
+    },
+    {
+      "id": 7,
+      "nom": "Drag 3",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/drag34.png"
+    },
+    {
+      "id": 8,
+      "nom": "Drag X Plus",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/dragxplus1.png"
+    },
+    {
+      "id": 9,
+      "nom": "Drag X Plus",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/dragxplus2.png"
+    },
+    {
+      "id": 10,
+      "nom": "Drag X Plus",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/dragxplus3.png"
+    },
+    {
+      "id": 11,
+      "nom": "Gen 200",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/gen2001.png"
+    },
+    {
+      "id": 12,
+      "nom": "Gen 200",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/gen2002.png"
+    },
+    {
+      "id": 13,
+      "nom": "Gen 200",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/gen2003.png"
+    },
+    {
+      "id": 14,
+      "nom": "Gen 200",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/gen2004.png"
+    },
+    {
+      "id": 15,
+      "nom": "Aegis Legend 2",
+      "prix": 175,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/legend1.png"
+    },
+    {
+      "id": 16,
+      "nom": "Aegis Legend 2",
+      "prix": 175,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/legend2.png"
+    },
+    {
+      "id": 17,
+      "nom": "Aegis Legend 2",
+      "prix": 175,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/legend3.png"
+    },
+    {
+      "id": 18,
+      "nom": "Aegis Legend 2",
+      "prix": 175,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/legend4.png"
+    },
+    {
+      "id": 19,
+      "nom": "Lost Vape",
+      "prix": 200,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lost1.png"
+    },
+    {
+      "id": 20,
+      "nom": "Lost Vape",
+      "prix": 200,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lost2.png"
+    },
+    {
+      "id": 21,
+      "nom": "Lost Vape",
+      "prix": 200,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lost3.png"
+    },
+    {
+      "id": 22,
+      "nom": "Lost Vape",
+      "prix": 200,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lost4.png"
+    },
+    {
+      "id": 23,
+      "nom": "Puma",
+      "prix": 130,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/puma1.png"
+    },
+    {
+      "id": 24,
+      "nom": "Puma",
+      "prix": 130,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/puma2.png"
+    },
+    {
+      "id": 25,
+      "nom": "Puma",
+      "prix": 130,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/puma3.png"
+    },
+    {
+      "id": 26,
+      "nom": "Puma",
+      "prix": 130,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/puma4.png"
+    },
+    {
+      "id": 27,
+      "nom": "Asmodus Lustro",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lustro1.png"
+    },
+    {
+      "id": 28,
+      "nom": "Asmodus Lustro",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/lustro2.png"
+    },
+    {
+      "id": 29,
+      "nom": "Asmodus Lustro",
+      "prix": 180,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/AsmodusLustro.jpg"
+    }
+  ],
+  "clearomizer": [
+    {
+      "id": 1,
+      "nom": "Dead Rabbit V3",
+      "prix": 135,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/deadrabbitv31.png"
+    },
+    {
+      "id": 2,
+      "nom": "Dead Rabbit V3",
+      "prix": 135,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/deadrabbitv32.png"
+    },
+    {
+      "id": 3,
+      "nom": "Dead Rabbit V3",
+      "prix": 135,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/deadrabbitv33.png"
+    },
+    {
+      "id": 4,
+      "nom": "Fat Rabbit",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/fatrabbit1.png"
+    },
+    {
+      "id": 5,
+      "nom": "Fat Rabbit",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/fatrabbit2.png"
+    },
+    {
+      "id": 6,
+      "nom": "Fat Rabbit",
+      "prix": 150,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/fatrabbit3.png"
+    },
+    {
+      "id": 7,
+      "nom": "Horus",
+      "prix": 90,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/horus1.png"
+    },
+    {
+      "id": 8,
+      "nom": "Horus",
+      "prix": 90,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/horus2.png"
+    },
+    {
+      "id": 9,
+      "nom": "Horus",
+      "prix": 90,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/horus3.png"
+    },
+    {
+      "id": 10,
+      "nom": "Kylin M ",
+      "prix": 149,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/kylinm1.png"
+    },
+    {
+      "id": 11,
+      "nom": "Kylin M ",
+      "prix": 149,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/kylinm2.png"
+    },
+    {
+      "id": 12,
+      "nom": "Kylin M ",
+      "prix": 149,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/kylinm3.png"
+    },
+    {
+      "id": 13,
+      "nom": "Serpent SMM",
+      "prix": 122,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/serpent1.png"
+    },
+    {
+      "id": 14,
+      "nom": "Serpent SMM",
+      "prix": 122,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/serpent2.png"
+    },
+    {
+      "id": 15,
+      "nom": "Serpent SMM",
+      "prix": 122,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/serpent3.png"
+    },
+    {
+      "id": 16,
+      "nom": "Zeus X",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/zeus1.png"
+    },
+    {
+      "id": 17,
+      "nom": "Zeus X",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/zeus2.png"
+    },
+    {
+      "id": 18,
+      "nom": "Zeus X",
+      "prix": 100,
+      "quantite": 10,
+      "dispo": true,
+      "image": "../assets/zeus3.png"
+    }
+  ]
+}

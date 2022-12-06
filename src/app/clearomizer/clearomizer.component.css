@@ -1,0 +1,25 @@
+mat-slider {
+    width: 150px;
+  }
+div > span{
+    padding-left: 40px;
+   
+}
+img{
+  height: 160px;
+}
+.conatiner{
+height: 200px;
+width: 75px;
+}
+.baredesearch{
+width: 140px;
+
+}
+aside { float: left;
+    padding: 20px;
+    width: 200px;
+  margin-left: 20px;  }
+article{
+  margin-left: 15%;
+}

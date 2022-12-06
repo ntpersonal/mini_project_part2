@@ -1,11 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
-  <a class="navbar-brand" style="width: 15px;padding-top: 15px;"href="#">
+  <a class="navbar-brand" style="padding-top: 15px;"href="#">
         <!-- <img src="/assets/logoproject5.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top bg-primary trans"> -->
-       <i class="fa fa-vimeo-square bg-primary left"  aria-hidden="true" ></i></a><a class="navbar-brand" style="width: 15px;padding-top: 15px;"href="#">Vape community</a>
+       <i class="fa fa-vimeo-square bg-primary "  aria-hidden="true"></i>    Vape community</a>
+    <!--    <a class="navbar-brand" style="padding-top: 15px;"href="#">Vape community</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav m-auto mt-2 mt-lg-0">
             <li class="nav-item active ">
@@ -22,12 +23,13 @@
                 <i class="fa fa-exchange" aria-hidden="true"></i>   Exchange
               </a>
               <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Clearomizer</a></li>
+                <li><a class="dropdown-item" href="#">Boxes</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Vape</a></li>
               </ul>
             </li>
+            
         </ul>
         <form class="d-flex  baredesearch">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -37,7 +39,7 @@
             <option>EN</option>
             <option>FR</option>
           </select>
-          <button class="btn btn-warning ms-auto "><i class="fa fa-user" aria-hidden="true"></i> Login</button>
-      <button class="btn btn-success m-auto"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Pannier</button>    
+          <button class="btn btn-warning ms-auto " routerLink="Login"><i class="fa fa-user" aria-hidden="true" ></i> Login</button>
+      <button class="btn btn-success m-auto" routerLink="Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Pannier</button>    
     </div>
 </nav>

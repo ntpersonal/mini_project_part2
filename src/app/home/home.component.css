@@ -3,3 +3,23 @@ h2{
     font-family: Lato;
 }
 
+img{
+    height: 160px;
+  }
+  .conatiner{
+  height: 200px;
+  width: 75px;
+  text-align: center;
+  }
+  aside { float: left;
+    padding: 20px;
+    width: 200px;
+  margin-left: 20px;  }
+article{
+  margin-left: 15%;
+}
+.slider{
+margin-right: 50px;
+width: 150px;
+height: 35%;
+}

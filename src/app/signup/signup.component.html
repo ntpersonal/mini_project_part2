@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign up</h1><hr>
+                    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                        <div class="mb-3">
+                          <label class="form-label">Name</label>
+                          <input formControlName="name"type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div *ngIf="NameRequired()" class="alert alert-danger">
+                          Name is required
+                        </div>
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input formControlName="email" type="email" class="form-control" id="mail"placeholder="email@gmail.com">
+                          </div>
+                          <div *ngIf="MailRequired()" class="alert alert-danger">
+                            Email is required
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            <input formControlName="mobile" type="Number" class="form-control" id="telephone" placeholder="Your Phone Number">
+                          </div>
+                          <div *ngIf="PhoneRequired()" class="alert alert-danger">
+                            Mobile number is required
+                          </div>
+                        <div class="mb-3">
+                          <label class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" placeholder="Enter Your Password">
+                        </div>
+                        <div *ngIf="isValidPattern()" class="alert alert-warning">
+                          The password must start with a CAPiTAL letter followed by at least 1 letter
+                        </div>
+                        <div *ngIf="PassRequired()" class="alert alert-danger">
+                          Password is required
+                        </div>
+                        <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Sign up</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<app-footer></app-footer>

@@ -1,4 +1,41 @@
+<aside>
+<b style="margin-left: 30px;">search By Name:</b>
+  <hr>
+<div class="d-flex flex-column baredesearch ">
+    <div class="input-group m-5">
+        <input class="form-control rounded" type="search" placeholder="Search" [(ngModel)]="mot" aria-label="Search" >
+        <button class="btn btn-outline-success" type="submit" (click)="searchBox()" >Search</button>
+    </div><b style="margin-left: 45px;">BY Prix:</b> 
+ <hr>
+ <br>
 <div >
-	<span>Prix:     <b class="gridSizeValue" >{{gridsize.value|currency : "dt":''}} dt</b></span><br>
-<mat-slider #gridsize  step="1" min="0" max="1000" ></mat-slider>
+	<span>    <b class="gridSizeValue" >{{gridsize.value|currency : "dt":''}} dt</b></span><br>
+ <mat-slider #gridsize  step="1" min="0" max="180" (change)="searchBoxBYPrix($event)"></mat-slider>
+</div>  
+<br>
 </div>
+</aside>
+<article>
+<div class="row container">
+  <div class="col-md-4 col-sm-12"style="text-align:center;" *ngFor="let i of boxes">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{i.nom}}</h5>
+        <div class="card-text">Price :{{i.prix}}DT <br>
+          <div *ngIf="i.dispo==true">
+            Available
+          </div>
+          <div *ngIf="i.dispo==false">
+            Not Available
+          </div>
+        </div>
+        
+        <a href="#" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+</article>
+<app-footer></app-footer>

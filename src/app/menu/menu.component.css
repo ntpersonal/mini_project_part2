@@ -2,7 +2,8 @@
     background-color: transparent;
 }
 .left{
-    margin-left: 15px;
+    position: relative;
+        margin-left: 50px;
 }
 .baredesearch{
 
