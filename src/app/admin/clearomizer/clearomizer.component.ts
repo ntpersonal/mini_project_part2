@@ -21,7 +21,7 @@ export class ClearomizerComponent implements OnInit {
     this.ClearomizerService.getclearomizer().subscribe((Clearomizer:any)=>{
       this.Clearomizer=Clearomizer;
     });
-    
+    this.valid();
     }
   searchClearomizer(){
     if(this.mot==" "){

@@ -1,0 +1,86 @@
+<div class="container">
+    <h2 class="text-center">Box management</h2>
+    <form class="bordure" [formGroup]="adminForm" (ngSubmit)="ajouterBox()">
+        <label> name:</label>
+        <input type="text" class="form-control" formControlName="nom">
+        <label> Price:</label>
+        <input type="text" class="form-control" formControlName="prix">
+        <label> Quantite:</label>
+        <input type="text" class="form-control" formControlName="quantite">
+        <label> Picture:</label>
+        <input type="text" class="form-control" formControlName="image"> <br>
+        <label>
+            <input type="checkbox" formControlName="dispo"> Available
+        </label>
+        <br>
+        <button class="btn btn-dark">Add</button>
+        <input type="reset" class="btn btn-secondary" value="Reset" /> 
+    </form>
+    <h4>List of Boxes</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Prix</th>
+                <th>Quantite</th>
+                <th>Available</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let l of lesBoxes">
+                <td><img style="width: 18rem;" src="{{l.image}}" alt=""></td>
+                <td>{{l.nom}} </td>
+                <td>{{l.prix}} DT</td>
+                <td>{{l.quantite}}</td>
+                <td> <input type="checkbox" [checked]="l.dispo">Yes</td>
+                <td> <input type="button" value="Update" class="btn btn-warning" (click)="modifier(l.id)"></td>
+                <td> <input type="button" value="Delete" class="btn btn-info" (click)="supp(l.id)"></td>
+            </tr>    
+        </tbody>
+    </table>
+    <h2 class="text-center">Clearomizer management</h2>
+    <form class="bordure" [formGroup]="adminForm" (ngSubmit)="ajouterAto()">
+        <label> name:</label>
+        <input type="text" class="form-control" formControlName="nom">
+        <label> Price:</label>
+        <input type="text" class="form-control" formControlName="prix">
+        <label> Quantite:</label>
+        <input type="text" class="form-control" formControlName="quantite">
+        <label> Picture:</label>
+        <input type="text" class="form-control" formControlName="image"> <br>
+        <label>
+            <input type="checkbox" formControlName="dispo"> Available
+        </label>
+        <br>
+        <button class="btn btn-dark">Add</button>
+        <input type="reset" class="btn btn-secondary" value="Reset" /> 
+    </form>
+    <h4>List of Clearomizers</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Prix</th>
+                <th>Quantite</th>
+                <th>Available</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of lesAto">
+                <td><img style="width: 18rem;" src="{{i.image}}" alt=""></td>
+                <td>{{i.nom}} </td>
+                <td>{{i.prix}} DT</td>
+                <td>{{i.quantite}}</td>
+                <td> <input type="checkbox" [checked]="i.dispo">Yes</td>
+                <td> <input type="button" value="Update" class="btn btn-warning" (click)="modifierAto(i.id)"></td>
+                <td> <input type="button" value="Delete" class="btn btn-info" (click)="suppAto(i.id)"></td>
+            </tr>    
+        </tbody>
+    </table>
+</div>

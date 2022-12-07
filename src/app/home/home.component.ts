@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { Boxes } from '../boxes/boxes';
+import { Location } from '@angular/common';
 import { BoxesService } from '../boxes/boxes.service';
 import { Clearomizer } from '../clearomizer/clearomizer';
 import { ClearomizerService } from '../clearomizer/clearomizer.service';
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
   },{
     thumbImage:'../assets/news1.jpg'
   }];
-  constructor(private ClearomizerService:ClearomizerService,private boxesservvice:BoxesService,private VapeService:VapeService) {
+  constructor(private ClearomizerService:ClearomizerService,private boxesservvice:BoxesService,private VapeService:VapeService,private location: Location) {
   }
   ngOnInit(): void {
     this.VapeService.getVape().subscribe((Vape:any)=>{
@@ -35,4 +36,11 @@ export class HomeComponent implements OnInit {
       this.Clearomizer=Clearomizer;
     });
   }
+  valid(){
+    if((this.location.path()=='../user/Home')||(this.location.path()=='../Admin/Home')){
+      
+    }else{
+      alert("you should made a account first");
+    }
+    }
 }

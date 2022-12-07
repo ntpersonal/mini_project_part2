@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Boxes } from './boxes';
 import { BoxesService } from './boxes.service';
 import { MatSliderChange } from '@angular/material/slider';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-boxes',
   templateUrl: './boxes.component.html',
@@ -14,7 +15,7 @@ export class BoxesComponent implements OnInit {
   boxes: Boxes[]=[]; 
   mot: string = '';
   prix:number=0;
-  constructor(private boxesservvice:BoxesService) { }
+  constructor(private boxesservvice:BoxesService,private location: Location) { }
 
   ngOnInit(): void {
     this.boxesservvice.getBoxes().subscribe((boxes:any)=>{
@@ -44,4 +45,11 @@ export class BoxesComponent implements OnInit {
       this.boxes = this.boxes.filter(data => data.prix >= Number(event.value));
     }
   }
+  valid(){
+    if((this.location.path()=='../user/Boxes')||(this.location.path()=='../Admin/Boxes')){
+      
+    }else{
+      alert("you should made a account first");
+    }
+    }
 }

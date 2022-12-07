@@ -1,5 +1,5 @@
 <!-- <ng-image-slider [images]="images" [infinite]="true" [autoSlide]="true" ></ng-image-slider> -->
-<ng-image-slider [images]="images" [infinite]="true" [autoSlide]="true" #nav [imageSize]="{width: '762px',heigth:'442px',space:'10px'}" class="slider"></ng-image-slider>
+<ng-image-slider [images]="images" [infinite]="true" [autoSlide]="true" #nav [imageSize]="{width: '650px',height:'350px',space:'10px'}" class="slider"></ng-image-slider>
 <div class="container">
 <br>
 <h2 class="">Vape :</h2>
@@ -19,7 +19,7 @@
             </div>
           </div>
           
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary"(click)="valid()">Add to cart</a>
         </div>
       </div>
       <br>
@@ -44,7 +44,7 @@
             </div>
           </div>
           
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary" (click)="valid()">Add to cart</a>
         </div>
       </div>
       <br>
@@ -56,7 +56,7 @@
 <article>
   <div class="row">
     <div class="col-md-4 col-sm-12" *ngFor="let i of Clearomizer.slice(0,6)">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;text-align: center;">
         <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{i.nom}}</h5>
@@ -69,7 +69,7 @@
             </div>
           </div>
           
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary" (click)="valid()">Add to cart</a>
         </div>
       </div>
       <br>

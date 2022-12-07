@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
       }
     }
     if (this.exist){
-      this.router.navigate(['../user/Home']);
-      alert('WELCOME !')
+      this.router.navigate(['/Admin']);
+      alert('WELCOME !');
     }
     else
     alert('User undefined')

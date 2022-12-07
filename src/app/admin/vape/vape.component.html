@@ -4,20 +4,20 @@
     <div class="d-flex flex-column baredesearch ">
         <div class="input-group m-5">
             <input class="form-control rounded" type="search" placeholder="Search" [(ngModel)]="mot" aria-label="Search" >
-            <button class="btn btn-outline-success" type="submit" (click)="searchBox()" >Search</button>
+            <button class="btn btn-outline-success" type="submit" (click)="searchVape()" >Search</button>
         </div><b style="margin-left: 45px;">BY Prix:</b> 
      <hr>
      <br>
     <div >
         <span>    <b class="gridSizeValue" >{{gridsize.value|currency : "dt":''}} dt</b></span><br>
-     <mat-slider #gridsize  step="1" min="0" max="180" (change)="searchBoxBYPrix($event)"></mat-slider>
+     <mat-slider #gridsize  step="1" min="0" max="150" (change)="searchVapeBYPrix($event)"></mat-slider>
     </div>  
     <br>
     </div>
     </aside>
     <article>
     <div class="row container">
-      <div class="col-md-4 col-sm-12"style="text-align:center;" *ngFor="let i of boxes">
+      <div class="col-md-4 col-sm-12 "style="text-align:center;" *ngFor="let i of Vape">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top  text-center" src="{{i.image}}" alt="Card image cap">
           <div class="card-body">

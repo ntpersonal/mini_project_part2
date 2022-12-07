@@ -18,6 +18,7 @@ import { VapeComponent } from './vape/vape.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { CartComponent } from './cart/cart.component';
     LoginComponent,
     SignupComponent,
     CartComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

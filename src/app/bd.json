@@ -36,6 +36,20 @@
       "mobile": 21667525,
       "password": "Hello",
       "id": 4
+    },
+    {
+      "name": "omar",
+      "email": "omar@gmail.com",
+      "mobile": 29832452,
+      "password": "Azerty",
+      "id": 5
+    },
+    {
+      "name": "triki",
+      "email": "t@g.com",
+      "mobile": 22222222,
+      "password": "Triki",
+      "id": 6
     }
   ],
   "Vape": [
@@ -90,44 +104,12 @@
   ],
   "boxes": [
     {
-      "id": 1,
-      "nom": "Drag 2",
-      "prix": 150,
-      "quantite": 10,
-      "dispo": true,
-      "image": "../assets/drag21.png"
-    },
-    {
       "id": 2,
       "nom": "Drag 2",
       "prix": 150,
       "quantite": 10,
       "dispo": true,
       "image": "../assets/drag22.png"
-    },
-    {
-      "id": 3,
-      "nom": "Drag 2",
-      "prix": 150,
-      "quantite": 10,
-      "dispo": true,
-      "image": "../assets/drag23.png"
-    },
-    {
-      "id": 4,
-      "nom": "Drag 3",
-      "prix": 180,
-      "quantite": 10,
-      "dispo": true,
-      "image": "../assets/drag31.png"
-    },
-    {
-      "id": 5,
-      "nom": "Drag 3",
-      "prix": 180,
-      "quantite": 10,
-      "dispo": true,
-      "image": "../assets/drag32.png"
     },
     {
       "id": 6,
@@ -282,14 +264,6 @@
       "image": "../assets/puma2.png"
     },
     {
-      "id": 25,
-      "nom": "Puma",
-      "prix": 130,
-      "quantite": 10,
-      "dispo": true,
-      "image": "../assets/puma3.png"
-    },
-    {
       "id": 26,
       "nom": "Puma",
       "prix": 130,
@@ -320,6 +294,14 @@
       "quantite": 10,
       "dispo": true,
       "image": "../assets/AsmodusLustro.jpg"
+    },
+    {
+      "nom": "boxiset2",
+      "prix": "-15",
+      "quatite": 0,
+      "dispo": false,
+      "image": "jj",
+      "id": 31
     }
   ],
   "clearomizer": [
@@ -460,12 +442,20 @@
       "image": "../assets/zeus2.png"
     },
     {
-      "id": 18,
       "nom": "Zeus X",
-      "prix": 100,
-      "quantite": 10,
+      "prix": "100",
+      "quatite": 0,
       "dispo": true,
-      "image": "../assets/zeus3.png"
+      "image": "../assets/zeus3.png",
+      "id": 18
+    },
+    {
+      "nom": "test",
+      "prix": "10",
+      "quatite": 0,
+      "dispo": true,
+      "image": "yy",
+      "id": 19
     }
   ]
 }
