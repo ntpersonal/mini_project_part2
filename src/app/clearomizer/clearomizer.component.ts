@@ -50,7 +50,7 @@ export class ClearomizerComponent implements OnInit {
 if((this.location.path()=='../user/Clearomizer')||(this.location.path()=='../Admin/Clearomizer')){
   
 }else{
-  alert("you should made a account first");
+  alert("you should made an account first");
 }
 }
 }

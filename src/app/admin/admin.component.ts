@@ -19,7 +19,7 @@ export class AdminComponent implements OnInit {
     this.adminForm = this.fb.nonNullable.group({
       nom:[''],
       prix:[0],
-      quatite:[0],
+      quantite:[0],
       dispo:[true],
       image:['']
     })

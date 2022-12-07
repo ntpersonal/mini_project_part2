@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     if((this.location.path()=='../user/Home')||(this.location.path()=='../Admin/Home')){
       
     }else{
-      alert("you should made a account first");
+      alert("you should made an account first");
     }
     }
 }

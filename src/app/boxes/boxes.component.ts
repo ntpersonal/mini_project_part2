@@ -49,7 +49,7 @@ export class BoxesComponent implements OnInit {
     if((this.location.path()=='../user/Boxes')||(this.location.path()=='../Admin/Boxes')){
       
     }else{
-      alert("you should made a account first");
+      alert("you should made an account first");
     }
     }
 }

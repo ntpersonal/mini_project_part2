@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './admin/admin.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { ClearomizerComponent } from './clearomizer/clearomizer.component';
 import { ErrorComponent } from './error/error.component';
@@ -11,7 +10,6 @@ const routes: Routes = [
 children:[
 {path:'Boxes', title:'Boxes', component:BoxesComponent},
 {path:'Clearomizer', title:'Clearomizer', component:ClearomizerComponent},
-{path:'Modifier',title:'Modifier',component:AdminComponent},
 {path:'', redirectTo:'Home', pathMatch:'full'},
 {path:'**', title:'Erreur', component:ErrorComponent}
 ]}

@@ -294,14 +294,6 @@
       "quantite": 10,
       "dispo": true,
       "image": "../assets/AsmodusLustro.jpg"
-    },
-    {
-      "nom": "boxiset2",
-      "prix": "-15",
-      "quatite": 0,
-      "dispo": false,
-      "image": "jj",
-      "id": 31
     }
   ],
   "clearomizer": [
